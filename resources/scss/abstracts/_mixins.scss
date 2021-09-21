@@ -1,0 +1,39 @@
+@mixin link($color) {
+    font-family: $barlow;
+    font-style: normal;
+    font-weight: 600;
+    font-size: rem(18);
+    line-height: rem(25);
+    letter-spacing: rem(-0.128571);
+    color: $color;
+    text-decoration: none;
+}
+
+@mixin button {
+    width: rem(140);
+    height: rem(56);
+    background-color: $white;
+    color: $dark-blue;
+    border-radius: rem(28);
+    outline: none;
+    border: none;
+    font-family: $fraunces;
+    font-style: normal;
+    font-weight: bold;
+    font-size: rem(15);
+    line-height: rem(25);
+    letter-spacing: rem(-0.107143);
+    text-transform: uppercase;
+    color: $dark-blue;
+}
+
+@mixin line {
+    position: absolute;
+    width: rem(137);
+    height: rem(10);
+    border-radius: 28px;
+    mix-blend-mode: normal;
+    border: none;
+    top: 60%;
+    opacity: 0.25;
+}

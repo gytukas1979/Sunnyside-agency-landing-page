@@ -1,0 +1,31 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    min-width: rem(375);
+}
+.hidden {
+    display: none;
+}
+.yellow {
+    background-color: $yellow;
+}
+.soft-red {
+    background-color: $soft-red;
+}
+.dark-green {
+    color: $dark-green;
+}
+.dark-blue-heading {
+    color: $dark-blue-heading;
+    opacity: 0.75;
+}
+.dark-green-p {
+    color: $dark-green-p;
+}
+.dark-blue-p {
+    color: $dark-blue-p;
+}

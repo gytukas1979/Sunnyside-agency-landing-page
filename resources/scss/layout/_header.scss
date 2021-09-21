@@ -1,0 +1,189 @@
+.header {
+    position: relative;
+    width: 100%;
+    max-width: rem(1440);
+    height: 55.55vw;
+    max-height: rem(800);
+    margin: 0 auto;
+    background-image: url("../../images/desktop/image-header.jpg");
+    background-size: cover;
+    padding-top: rem(34);
+    @media (max-width: $md) {
+        height: 143.46vw;
+        min-height: rem(538);
+        max-height: rem(1600);
+        background-image: url("../../images/mobile/image-header.jpg");
+        padding-top: rem(32);
+    }
+    &__nav {
+        padding: 0 rem(48) 0 rem(40);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        @media (max-width: $md) {
+            padding: 0 rem(24);
+        }
+    }
+
+    &__logo-img {
+        display: block;
+        width: rem(170);
+        height: rem(33);
+        @media (max-width: $lg) {
+            width: rem(123.64);
+            height: rem(24);
+        }
+    }
+
+    &__nav-list {
+        display: flex;
+        @media (max-width: $md) {
+            display: none;
+        }
+    }
+
+    &__list-item {
+        list-style: none;
+        align-self: center;
+    }
+    &__nav-link {
+        @include link($white);
+        margin-right: rem(47);
+        @media (max-width: $lg) {
+            margin-right: rem(36);
+            font-size: rem(15);
+            line-height: rem(20);
+            letter-spacing: rem(-0.1);
+        }
+    }
+    &__button {
+        @include button;
+        cursor: pointer;
+        &:hover {
+            background-color: #8dcff5;
+            color: white;
+        }
+        @media (max-width: $lg) {
+            width: rem(112);
+            height: rem(44);
+            border-radius: rem(23);
+            font-size: rem(13);
+            line-height: rem(20);
+            letter-spacing: rem(-0.08);
+        }
+    }
+    &__hamburger-menu {
+        display: none;
+        @media (max-width: $md) {
+            cursor: pointer;
+            display: flex;
+            align-items: center;
+            &:hover {
+                opacity: 0.25;
+            }
+        }
+    }
+    &__hamburger-img {
+        width: rem(24);
+        height: rem(18);
+    }
+
+    &__heading {
+        font-family: $fraunces;
+        font-style: normal;
+        font-weight: 900;
+        font-size: rem(56);
+        line-height: rem(69);
+        text-align: center;
+        letter-spacing: rem(8.75);
+        text-transform: uppercase;
+        color: $white;
+        margin-top: 7.29%;
+        @media (max-width: $lg) {
+            font-size: rem(40);
+            line-height: rem(49);
+            letter-spacing: rem(6.25);
+        }
+        @media (max-width: $md) {
+            margin-top: 23.46%;
+            font-size: rem(56);
+            line-height: rem(69);
+            letter-spacing: rem(8.75);
+            padding: 0 rem(24);
+        }
+        @media (max-width: $sm) {
+            font-size: rem(40);
+            line-height: rem(49);
+            letter-spacing: rem(6.25);
+        }
+    }
+
+    &__arrow-img {
+        position: absolute;
+        display: block;
+        width: 2.08%;
+        height: 13.44%;
+        left: 48.96%;
+        top: 45.06%;
+        @media (max-width: $md) {
+            width: 8%;
+            height: 19.97%;
+            left: 46%;
+            top: 54.64%;
+        }
+    }
+
+    &__nav-collapse {
+        position: absolute;
+        z-index: 2;
+        right: rem(24);
+        top: rem(82);
+        width: calc(100% - 3rem);
+    }
+    &__triangle {
+        width: 100%;
+        border-top: 6.4vw solid transparent;
+        border-right: 6.4vw solid $light-yellow;
+    }
+    &__nav-mobile {
+        width: 100%;
+        background-color: $light-yellow;
+        padding: rem(39) 0;
+    }
+    &__mobile-nav-list {
+        display: flex;
+        flex-direction: column;
+    }
+    &__mobile-list-item {
+        list-style: none;
+        align-self: center;
+        margin-top: rem(32);
+        &:first-child {
+            margin-top: 0;
+        }
+    }
+    &__mobile-nav-link {
+        font-family: $barlow;
+        font-style: normal;
+        font-weight: 600;
+        font-size: rem(20);
+        line-height: rem(25);
+        letter-spacing: rem(-0.142857);
+        color: $grey-blue;
+        text-decoration: none;
+        &:hover {
+            color: #8dcff5;
+        }
+    }
+    &__mobile-button {
+        @include button;
+        background-color: $yellow;
+        color: $dark-blue;
+        margin: rem(32) auto 0;
+        cursor: pointer;
+        &:hover {
+            background-color: #8dcff5;
+            color: white;
+        }
+    }
+}
