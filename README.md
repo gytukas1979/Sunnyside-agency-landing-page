@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [https://sunnyside-agency-landing-page-68iqgcfo7-gytukas1979.vercel.app/](https://your-live-site-url.com)
+- Live Site URL: [https://sunnyside-agency-landing-page-68iqgcfo7-gytukas1979.vercel.app/](https://sunnyside-agency-landing-page-68iqgcfo7-gytukas1979.vercel.app/)
 
 ## My process
 
